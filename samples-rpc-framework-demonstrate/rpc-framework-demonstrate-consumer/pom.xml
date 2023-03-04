@@ -17,12 +17,14 @@
     </properties>
 
     <dependencies>
+        <!--        api-->
         <dependency>
             <groupId>com.crazyhzm</groupId>
             <artifactId>rpc-framework-demonstrate-api</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
 
+        <!--        dubbo-->
         <dependency>
             <groupId>org.apache.dubbo</groupId>
             <artifactId>dubbo</artifactId>
@@ -34,6 +36,7 @@
                 </exclusion>
             </exclusions>
         </dependency>
+        <!--        注册中心-->
         <dependency>
             <groupId>org.apache.dubbo</groupId>
             <artifactId>dubbo-registry-zookeeper</artifactId>
