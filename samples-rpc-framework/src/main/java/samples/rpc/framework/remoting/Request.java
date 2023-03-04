@@ -23,6 +23,7 @@ import java.io.Serializable;
 
 /**
  * @author crazyhzm@apache.org
+ * 一次RPC请求所需内容的模型
  */
 public class Request implements Serializable {
 

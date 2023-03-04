@@ -24,6 +24,7 @@ import io.netty.handler.codec.MessageToByteEncoder;
 
 /**
  * @author crazyhzm@apache.org
+ * 消息编码器
  */
 public class Encoder extends MessageToByteEncoder {
 

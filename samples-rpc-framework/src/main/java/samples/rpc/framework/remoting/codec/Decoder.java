@@ -26,6 +26,7 @@ import java.util.List;
 
 /**
  * @author crazyhzm@apache.org
+ * 消息解码器
  */
 public class Decoder extends ByteToMessageDecoder {
     private Class<?> genericClass;

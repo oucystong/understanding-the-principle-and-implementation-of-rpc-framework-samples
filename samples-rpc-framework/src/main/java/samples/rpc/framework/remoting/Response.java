@@ -21,6 +21,7 @@ import java.io.Serializable;
 
 /**
  * @author crazyhzm@apache.org
+ * 一次RPC响应所需内容模型
  */
 public class Response implements Serializable {
     private String requestId;

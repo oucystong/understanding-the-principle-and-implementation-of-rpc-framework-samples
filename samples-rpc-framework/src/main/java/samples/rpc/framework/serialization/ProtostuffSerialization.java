@@ -29,6 +29,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * @author crazyhzm@apache.org
+ * Protostuff序列化和反序列化方法
  */
 public class ProtostuffSerialization {
 
@@ -41,6 +42,7 @@ public class ProtostuffSerialization {
 
     /**
      * 从缓存中获取schema，如果没有则创建schema并且缓存schema
+     *
      * @param cls
      * @param <T>
      * @return
@@ -55,7 +57,12 @@ public class ProtostuffSerialization {
         }
         return schema;
     }
-
+    
+    
+    /**
+     * @Description: 序列化方法
+     * @Author: Mr.Tong
+     */
     @SuppressWarnings("unchecked")
     public static <T> byte[] serialize(T obj) {
         // 获得对象的类
@@ -74,6 +81,11 @@ public class ProtostuffSerialization {
         }
     }
 
+    
+    /**
+     * @Description: 反序列化方法
+     * @Author: Mr.Tong
+     */
     public static <T> T deserialize(byte[] data, Class<T> cls) {
         try {
             // 实例化一个类的对象
